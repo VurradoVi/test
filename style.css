@@ -169,6 +169,7 @@ a:active {
     right: 0;
     bottom: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.3) 100%);
+    
 
 }
 
@@ -179,8 +180,8 @@ a:active {
 .main__block5:hover::before,
 .main__block6:hover::before,
 .main__block7:hover::before {
+    cursor: pointer;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.1));
-    
 }
 
 
@@ -204,6 +205,7 @@ a:active {
     margin: 0 auto;
     transition: background-color .7s;
 }
+
 .footer__icons {
     text-align: center;
 }
@@ -244,6 +246,7 @@ a:active {
         grid-area: unset;
     }
 }
+
 @media (max-width: 820px) {
     .header {
         flex-direction: column;
