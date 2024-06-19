@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -179,7 +180,9 @@ a:active {
 .main__block6:hover::before,
 .main__block7:hover::before {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.1));
+    
 }
+
 
 .main__block p {
     font-size: 23px;
@@ -195,6 +198,12 @@ a:active {
     font-size: 27px;
 }
 
+.footer {
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: background-color .7s;
+}
 .footer__icons {
     text-align: center;
 }

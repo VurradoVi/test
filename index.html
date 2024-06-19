@@ -19,13 +19,25 @@
                     <ul class="header__nav-list">
                         <li><a href="#!">Главная</a></li>
                         <li><a href="#!">О компании</a></li>
-                        <li><a href="#!">Проекты</a></li>
+                        <li><a href="#sec2">Проекты</a></li>
                         <li><a href="#!">Услуги</a></li>
-                        <li><a href="#!">Контакты</a></li>
+                        <li><a onclick="changeStyle()" href="#sec1">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+
+        <script>
+            function changeStyle() {
+                setTimeout(function () {
+                    document.getElementById('sec1').style.backgroundColor = 'rgba(216, 216, 216, 1)';
+                }, 400);
+
+                setTimeout(function () {
+                    document.getElementById('sec1').style.backgroundColor = 'rgba(0, 0, 0, 0)';
+                }, 1100);
+            }
+        </script>
 
         <div class="main">
             <h1 class="main__h1">Проекты нашей компании</h1>
@@ -36,7 +48,7 @@
                 <div class="main__block2">
                     <p>Более длинное название проекта</p>
                 </div>
-                <div class="main__block3">
+                <div class="main__block3" id="sec2">
                     <p>Название</p>
                 </div>
                 <div class="main__block4">
@@ -54,7 +66,7 @@
             </div>
         </div>
 
-        <footer class="footer">
+        <footer class="footer" id="sec1">
             <div class="footer__icons">
                 <a href="#">
                     <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
